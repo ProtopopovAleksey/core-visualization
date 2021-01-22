@@ -234,7 +234,7 @@
           .data(this.img_data)
           .enter()
           .append("svg:image")
-          .attr("xlink:href", d => `/images/${d.image}`)
+          .attr("xlink:href", d => `/core-visualization/images/${d.image}`)
           .attr("y", d => this.yScale(d.start))
           .attr("x", d => {
             if (d.type === "DL") return 5;
